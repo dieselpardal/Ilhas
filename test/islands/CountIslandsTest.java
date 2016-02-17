@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 public class CountIslandsTest {
 
     @Test
-    public void souldTestThreeIslandsExist() {
+    public void shouldTestThreeIslandsExist() {
 
         int[][] SetIslands = {{0, 0, 0, 0, 0}, {0, 1, 1, 0, 0}, {0, 1, 0, 0, 0}, {0, 0, 0, 0, 1}, {1, 1, 0, 0, 0}};
         CountIslands setIsland = new CountIslands(SetIslands);
@@ -17,7 +17,7 @@ public class CountIslandsTest {
     }
 
     @Test
-    public void souldIslandsValid() {
+    public void shouldIslandsValid() {
 
         int[][] SetIslands = {{1, 1, 0, 1, 0, 1}, {0, 1, 1, 0, 0, 1}, {1, 0, 0, 1, 0, 0}, {0, 0, 0, 1, 0, 0}};
         CountIslands setIsland = new CountIslands(SetIslands);
@@ -25,7 +25,7 @@ public class CountIslandsTest {
     }
 
     @Test
-    public void souldCheckIslandExistValid() {
+    public void shouldCheckIslandExistValid() {
 
         int[][] SetIslands = {{1, 1, 0, 1, 0, 1}, {0, 1, 1, 0, 0, 1}, {1, 0, 0, 1, 0, 0}, {0, 0, 0, 1, 0, 0}};
         CountIslands setIsland = new CountIslands(SetIslands);
@@ -33,7 +33,7 @@ public class CountIslandsTest {
     }
 
     @Test
-    public void souldCheckLimitAreaTopAndLeftOnOceanValid() {
+    public void shouldCheckLimitAreaTopAndLeftOnOceanValid() {
 
         int[][] SetIslands = {{1, 1, 0, 1, 0, 1}, {0, 1, 1, 0, 0, 1}, {1, 0, 0, 1, 0, 0}, {0, 0, 0, 1, 0, 0}};
         CountIslands setIsland = new CountIslands(SetIslands);
@@ -41,7 +41,7 @@ public class CountIslandsTest {
     }
 
     @Test
-    public void souldCheckLimitAreaBottomAndRightOnOceanValid() {
+    public void shouldCheckLimitAreaBottomAndRightOnOceanValid() {
 
         int[][] SetIslands = {{1, 1, 0, 1, 0, 1}, {0, 1, 1, 0, 0, 1}, {1, 0, 0, 1, 0, 0}, {0, 0, 0, 1, 0, 0}};
         CountIslands setIsland = new CountIslands(SetIslands);
@@ -49,7 +49,7 @@ public class CountIslandsTest {
     }
 
     @Test
-    public void souldDetectFirstLandValid() {
+    public void shouldDetectFirstLandValid() {
 
         int[][] SetIslands = {{1, 1, 0, 1, 0, 1}, {0, 1, 1, 0, 0,1}, {1, 0, 0, 1, 0, 0}, {0, 0, 0, 1, 0, 0}};
         CountIslands setIsland = new CountIslands(SetIslands);
@@ -57,7 +57,7 @@ public class CountIslandsTest {
     }
 
     @Test
-    public void souldTestIslandNotExist() {
+    public void shouldTestIslandNotExist() {
 
         int[][] setIslands = {{0, 0}, {0, 0}};
         CountIslands setIsland = new CountIslands(setIslands);
@@ -65,7 +65,7 @@ public class CountIslandsTest {
     }
 
     @Test
-    public void souldTestIslandFull() {
+    public void shouldTestIslandFull() {
 
         int[][] setIslands = {{1, 1}, {1, 1}};
         CountIslands setIsland = new CountIslands(setIslands);
@@ -73,7 +73,7 @@ public class CountIslandsTest {
     }
 
     @Test
-    public void souldTestSeaEmpty() {
+    public void shouldTestSeaEmpty() {
 
         int[][] setIslands = null;
         CountIslands setIsland = new CountIslands(setIslands);
